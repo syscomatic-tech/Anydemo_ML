@@ -148,6 +148,6 @@ def train(
         "-l", ONLYLATEST, "-c", CACHEDATA
     ], check=True)
     os.system("rm -r /home/paperspace/project/dataset/*")
-    requests.get("http://184.105.3.254/add_custom/"+MODELNAME+"/"+quote("http://184.105.4.243/download/"+MODELNAME+".pth")+"?v="+VERSION)
+    requests.get("http://184.105.4.112/add_custom/"+MODELNAME+"/"+quote("http://184.105.4.243/download/"+MODELNAME+".pth")+"?v="+VERSION)
 if __name__ == "__main__":
     train(MODELNAME="gigs")
